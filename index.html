@@ -1,0 +1,358 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Dama Dent Clinics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Readex+Pro:wght@500;600&display=swap">
+<style>
+/* Layout: navy hero panel with a phone-frame video overlapping into a calm, airy page; gold only on actions. */
+:root{
+  --bg:#f5f8fc; --surface:#ffffff; --surface-2:#e9f0f9; --ink:#10223f; --muted:#51627d; --line:#d6e0ee;
+  --brand:#0f2f66; --brand-text:#0f2f66; --gold:#f0b323; --gold-ink:#10223f; --hero:#0f2f66; --hero-ink:#ffffff; --hero-muted:#c3d2ee;
+  --ok:#1c7a4d; --err:#b3261e;
+  --f-display:'Fraunces','Readex Pro',Georgia,serif;
+  --f-body:'IBM Plex Sans Arabic','IBM Plex Sans',system-ui,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a1324; --surface:#111d36; --surface-2:#16264a; --ink:#e9eefa; --muted:#a2b2cf; --line:#223457;
+  --brand-text:#a9c2f2; --hero:#0d2250; --ok:#5fd19a; --err:#ff8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a1324; --surface:#111d36; --surface-2:#16264a; --ink:#e9eefa; --muted:#a2b2cf; --line:#223457;
+  --brand-text:#a9c2f2; --hero:#0d2250; --ok:#5fd19a; --err:#ff8a80; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.7 var(--f-body);padding-inline:16px;-webkit-text-size-adjust:100%}
+html[data-l="ar"] .en,html[data-l="en"] .ar{display:none!important}
+.wrap{max-width:1120px;margin-inline:auto}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.25;margin:0;text-wrap:balance}
+html[data-l="en"] h1,html[data-l="en"] h2{letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.eyebrow{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-text);font-weight:600}
+html[data-l="ar"] .eyebrow{letter-spacing:0;font-size:.9rem}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin-inline:-16px;padding:10px 16px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1120px;margin-inline:auto;display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo{width:44px;height:44px;border-radius:10px;background:#fff;object-fit:contain;border:1px solid var(--line);flex:none}
+.brand b{font-family:var(--f-display);font-size:1.05rem;white-space:nowrap}
+nav{display:flex;gap:20px;margin-inline-start:auto;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted);padding:6px 0}
+nav a:hover{color:var(--ink)}
+.tools{display:flex;gap:8px;align-items:center}
+.lang{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:600 .85rem var(--f-body);cursor:pointer;min-height:40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 22px;border-radius:999px;border:0;font:600 1rem var(--f-body);text-decoration:none;cursor:pointer;background:var(--gold);color:var(--gold-ink);transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
+.btn.sm{min-height:40px;padding:6px 16px;font-size:.9rem}
+@media(max-width:860px){nav{display:none}.tools{margin-inline-start:auto}.brand b{font-size:.95rem}}
+@media(max-width:420px){header .btn{display:none}}
+
+/* hero */
+.hero{margin-inline:-16px;background:var(--hero);color:var(--hero-ink);padding:56px 16px 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2rem,4.6vw,3.5rem)}
+.hero .eyebrow{color:var(--gold)}
+.hero p.lead{margin-top:20px;font-size:1.1rem;color:var(--hero-muted);max-width:54ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .ghost{color:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;padding:0;list-style:none;color:var(--hero-muted);font-size:.92rem}
+.facts li{display:flex;gap:8px;align-items:center}
+.facts li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none}
+.phone{justify-self:center;width:min(100%,290px);aspect-ratio:9/16;border-radius:26px;overflow:hidden;background:#000;border:6px solid rgba(255,255,255,.14);box-shadow:0 30px 60px -20px rgba(0,0,0,.5);position:relative}
+.phone video{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:36px}.phone{width:min(100%,260px)}}
+
+section{padding-block:72px}
+.head{max-width:62ch;margin-bottom:36px;display:grid;gap:10px}
+.head h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
+.head p{color:var(--muted)}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card h3{font-size:1.2rem}
+.card ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;color:var(--muted);font-size:.95rem}
+.card li{padding-inline-start:18px;position:relative}
+.card li::before{content:"";position:absolute;inset-inline-start:0;top:.7em;width:8px;height:2px;background:var(--gold)}
+.card.hl{background:var(--surface-2)}
+
+/* videos */
+.vids{background:var(--surface-2);margin-inline:-16px;padding-inline:16px}
+.reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px}
+.reel{display:grid;gap:12px;min-width:0}
+.reel .frame{aspect-ratio:9/16;border-radius:var(--r);overflow:hidden;background:#000;max-width:100%}
+.reel video{width:100%;height:100%;object-fit:cover;display:block}
+.reel h3{font-size:1.05rem}
+.reel p{color:var(--muted);font-size:.92rem}
+
+/* doctor + why */
+.doc{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.cred{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.cred li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
+.cred small{color:var(--muted);font-size:.85rem}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:28px 32px}
+.why div{display:grid;gap:6px;align-content:start;padding-top:16px;border-top:2px solid var(--gold)}
+.why h3{font-size:1.05rem}
+.why p{color:var(--muted);font-size:.93rem}
+@media(max-width:860px){.doc{grid-template-columns:1fr;gap:28px}}
+
+/* reviews */
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+blockquote{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:grid;gap:14px}
+blockquote p{font-size:1.02rem}
+blockquote cite{font-style:normal;color:var(--muted);font-size:.88rem}
+.score{display:flex;gap:12px;align-items:baseline;margin-bottom:20px;flex-wrap:wrap}
+.score b{font-family:var(--f-display);font-size:2.4rem;line-height:1;color:var(--brand-text)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:500;font-size:.93rem}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;min-height:46px;width:100%;min-width:0}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--gold);outline-offset:1px;border-color:transparent}
+.err{color:var(--err);font-size:.85rem;min-height:1.2em}
+.note{font-size:.85rem;color:var(--muted)}
+.ok{color:var(--ok);font-weight:500}
+.info{display:grid;gap:22px}
+.info dl{margin:0;display:grid;gap:18px}
+.info dt{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+html[data-l="ar"] .info dt{letter-spacing:0;font-size:.88rem}
+.info dd{margin:2px 0 0;font-size:1.05rem}
+.num{direction:ltr;unicode-bidi:isolate;display:inline-block;user-select:all}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 16px;text-decoration:none;font-size:.9rem;min-height:40px;display:inline-flex;align-items:center}
+.soc a:hover{border-color:var(--brand-text)}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+footer{margin-inline:-16px;padding:32px 16px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+
+<header>
+ <div class="bar">
+  <a class="brand" href="#top" aria-label="Dama Dent Clinics">
+   <img class="logo" alt="" src="data:image/jpeg;base64,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" width="44" height="44">
+   <b>Dama Dent Clinics</b>
+  </a>
+  <nav aria-label="Main">
+   <a href="#services"><span class="ar">الخدمات</span><span class="en">Services</span></a>
+   <a href="#videos"><span class="ar">من العيادة</span><span class="en">From the clinic</span></a>
+   <a href="#doctor"><span class="ar">الطبيبة</span><span class="en">Doctor</span></a>
+   <a href="#reviews"><span class="ar">آراء المرضى</span><span class="en">Reviews</span></a>
+   <a href="#book"><span class="ar">احجز</span><span class="en">Book</span></a>
+  </nav>
+  <div class="tools">
+   <button class="lang" id="lang" type="button" aria-label="Switch language"><span class="ar">English</span><span class="en">عربي</span></button>
+   <a class="btn sm" href="#book"><span class="ar">احجز كشف</span><span class="en">Book a visit</span></a>
+  </div>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <div class="wrap">
+  <div>
+   <p class="eyebrow"><span class="ar">عيادة د. دينا عبدالله لطب وجراحة الفم والأسنان</span><span class="en">Dr. Dina Abdallah · Oral &amp; Dental Surgery</span></p>
+   <h1 style="margin-top:14px"><span class="ar">كل تخصصات الأسنان في مكان واحد، بأحدث التقنيات.</span><span class="en">Every dental specialty under one roof, with modern technology.</span></h1>
+   <p class="lead"><span class="ar">من الحشو وعلاج العصب في جلسة واحدة إلى الزراعة وابتسامة هوليوود والتقويم الشفاف، بإشراف استشاريين وأخصائيين في الشيخ زايد، 6 أكتوبر.</span><span class="en">From fillings and single-session root canals to implants, Hollywood smile veneers and clear aligners, supervised by consultants and specialists in 6th of October City.</span></p>
+   <div class="cta-row">
+    <a class="btn" href="#book"><span class="ar">احجز كشف</span><span class="en">Book a visit</span></a>
+    <a class="btn ghost" href="#services"><span class="ar">شاهد الخدمات</span><span class="en">See our services</span></a>
+   </div>
+   <ul class="facts">
+    <li><span class="ar">13BF ويست بارك مول، 6 أكتوبر</span><span class="en">Westpark Mall, 6th of October</span></li>
+    <li><span class="ar">100% يوصون بالعيادة (9 تقييمات)</span><span class="en">100% recommend (9 reviews)</span></li>
+    <li><span class="ar">10.9 ألف متابع على إنستجرام</span><span class="en">10.9K followers on Instagram</span></li>
+   </ul>
+  </div>
+  <div class="phone">
+   <video id="heroVid" src="v1.mp4" poster="p1.jpg" muted loop playsinline preload="metadata" controls aria-label="Dr. Dina talking about children's teeth"></video>
+  </div>
+ </div>
+</div>
+
+<section id="services"><div class="wrap">
+ <div class="head">
+  <p class="eyebrow"><span class="ar">الخدمات</span><span class="en">Services</span></p>
+  <h2><span class="ar">علاج وتجميل وزراعة وتقويم</span><span class="en">Treatment, cosmetics, implants and orthodontics</span></h2>
+  <p><span class="ar">الأسعار تُحدد بعد الكشف حسب كل حالة.</span><span class="en">Prices are set after the examination, case by case.</span></p>
+ </div>
+ <div class="svc">
+  <article class="card">
+   <h3><span class="ar">علاج وحشو</span><span class="en">Restorative care</span></h3>
+   <ul>
+    <li><span class="ar">حشو العصب في جلسة واحدة</span><span class="en">Root canal in a single session</span></li>
+    <li><span class="ar">حشوات أمريكي وألماني وأسترالي</span><span class="en">American, German and Australian filling materials</span></li>
+    <li><span class="ar">تركيبات بتقنية CAD/CAM</span><span class="en">CAD/CAM crowns and restorations</span></li>
+    <li><span class="ar">جراحة الأسنان والخلع الجراحي للضرس المدفون</span><span class="en">Tooth surgery, including surgical removal of impacted molars</span></li>
+   </ul>
+  </article>
+  <article class="card">
+   <h3><span class="ar">تجميل الأسنان</span><span class="en">Cosmetic dentistry</span></h3>
+   <ul>
+    <li><span class="ar">عدسات الأسنان (ابتسامة هوليوود)</span><span class="en">Veneers (Hollywood smile)</span></li>
+    <li><span class="ar">تبييض الأسنان بأحدث الأجهزة</span><span class="en">Teeth whitening with modern devices</span></li>
+    <li><span class="ar">علاج الابتسامة اللثوية</span><span class="en">Gummy smile treatment</span></li>
+    <li><span class="ar">Botox و Filler</span><span class="en">Botox &amp; filler</span></li>
+   </ul>
+  </article>
+  <article class="card">
+   <h3><span class="ar">تقويم الأسنان</span><span class="en">Orthodontics</span></h3>
+   <ul>
+    <li><span class="ar">التقويم بجميع حالاته</span><span class="en">Braces for all case types</span></li>
+    <li><span class="ar">التقويم الشفاف</span><span class="en">Clear aligner cases</span></li>
+    <li><span class="ar">د. دينا حاصلة على Mini-Residency في التقويم</span><span class="en">Dr. Dina holds an orthodontics mini-residency certificate</span></li>
+   </ul>
+  </article>
+  <article class="card">
+   <h3><span class="ar">زراعة الأسنان</span><span class="en">Dental implants</span></h3>
+   <ul>
+    <li><span class="ar">زراعة الأسنان لتعويض الفاقد</span><span class="en">Implants to replace missing teeth</span></li>
+    <li><span class="ar">تركيبات متحركة وثابتة</span><span class="en">Removable and fixed prosthetics</span></li>
+    <li><span class="ar">الأشعة داخل العيادة</span><span class="en">On-site dental X-rays</span></li>
+   </ul>
+  </article>
+  <article class="card">
+   <h3><span class="ar">اللثة والوقاية</span><span class="en">Gums and prevention</span></h3>
+   <ul>
+    <li><span class="ar">إزالة الجير والتصبغات</span><span class="en">Scaling and stain removal</span></li>
+    <li><span class="ar">علاج أمراض اللثة</span><span class="en">Gum disease treatment</span></li>
+    <li><span class="ar">طب الأسنان الوقائي</span><span class="en">Preventive dentistry</span></li>
+    <li><span class="ar">ليزر طب الأسنان لحالات الصرير (الصك) وبعض مشاكل الفك</span><span class="en">Dental laser for teeth grinding and some jaw problems</span></li>
+   </ul>
+  </article>
+  <article class="card hl">
+   <h3><span class="ar">طب أسنان الأطفال</span><span class="en">Children's dentistry</span></h3>
+   <ul>
+    <li><span class="ar">كشف وعلاج وقاية للأطفال</span><span class="en">Check-ups, treatment and prevention for children</span></li>
+    <li><span class="ar">شاهدي نصيحة د. دينا عن ضرس الطفل في الفيديو بالأعلى</span><span class="en">Watch Dr. Dina's advice on children's molars in the video above</span></li>
+   </ul>
+  </article>
+ </div>
+</div></section>
+
+<section id="videos" class="vids"><div class="wrap">
+ <div class="head">
+  <p class="eyebrow"><span class="ar">من العيادة</span><span class="en">From the clinic</span></p>
+  <h2><span class="ar">شاهد العمل بنفسك</span><span class="en">See the work for yourself</span></h2>
+ </div>
+ <div class="reels">
+  <div class="reel">
+   <div class="frame"><video src="v1.mp4" poster="p1.jpg" controls playsinline preload="none" aria-label="Dr. Dina on protecting a child's molar"></video></div>
+   <h3><span class="ar">نصيحة د. دينا: احمِ ضرس طفلك</span><span class="en">Dr. Dina's advice: protect your child's molar</span></h3>
+  </div>
+  <div class="reel">
+   <div class="frame"><video src="v2.mp4" poster="p2.jpg" controls playsinline preload="none" aria-label="Before and after smile cases"></video></div>
+   <h3><span class="ar">قبل وبعد: تعويض الأسنان</span><span class="en">Before and after: replacing missing teeth</span></h3>
+  </div>
+  <div class="reel">
+   <div class="frame"><video src="v3.mp4" poster="p3.jpg" controls playsinline preload="none" aria-label="A complete denture shown by gloved hands"></video></div>
+   <h3><span class="ar">تركيبات كاملة</span><span class="en">Complete dentures</span></h3>
+  </div>
+ </div>
+</div></section>
+
+<section id="doctor"><div class="wrap doc">
+ <div class="head" style="margin:0">
+  <p class="eyebrow"><span class="ar">الطبيبة</span><span class="en">Your doctor</span></p>
+  <h2><span class="ar">د. دينا عبدالله</span><span class="en">Dr. Dina Abdallah</span></h2>
+  <p><span class="ar">تقود فريقًا من الاستشاريين والأخصائيين يغطي كل تخصصات طب الأسنان، من الأطفال إلى الزراعة والتقويم.</span><span class="en">She leads a team of consultants and specialists covering every dental specialty, from children's care to implants and orthodontics.</span></p>
+ </div>
+ <ul class="cred">
+  <li><b><span class="ar">ماجستير طب الأسنان</span><span class="en">Master in Dentistry</span></b><small>Ain Shams University</small></li>
+  <li><b><span class="ar">شهادة Mini-Residency في تقويم الأسنان</span><span class="en">Mini-Residency Certificate in Orthodontics</span></b><small>REU</small></li>
+  <li><b><span class="ar">بكالوريوس طب وجراحة الفم والأسنان (B.D.S)</span><span class="en">Bachelor of Dental Surgery (B.D.S)</span></b><small>REU</small></li>
+ </ul>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="head">
+  <p class="eyebrow"><span class="ar">لماذا ديما دنت</span><span class="en">Why Dama Dent</span></p>
+  <h2><span class="ar">جودة الأدوات والتعقيم والتقنية</span><span class="en">Materials, sterilisation and technology</span></h2>
+ </div>
+ <div class="why">
+  <div><h3><span class="ar">أحدث أجهزة التعقيم</span><span class="en">Modern sterilisation equipment</span></h3></div>
+  <div><h3><span class="ar">أدوات حشو أمريكية وألمانية وأسترالية</span><span class="en">Filling materials from the USA, Germany and Australia</span></h3></div>
+  <div><h3><span class="ar">حشو العصب في جلسة واحدة</span><span class="en">Root canal in one session</span></h3></div>
+  <div><h3><span class="ar">تركيبات CAD/CAM</span><span class="en">CAD/CAM restorations</span></h3></div>
+  <div><h3><span class="ar">كل التخصصات في عيادة واحدة</span><span class="en">All specialties in one clinic</span></h3></div>
+ </div>
+</div></section>
+
+<section id="reviews" style="padding-top:0"><div class="wrap">
+ <div class="head">
+  <p class="eyebrow"><span class="ar">آراء المرضى</span><span class="en">Patient reviews</span></p>
+  <h2><span class="ar">ما يقوله مرضانا على فيسبوك</span><span class="en">What patients say on Facebook</span></h2>
+ </div>
+ <div class="score"><b>100%</b><span class="ar">يوصون بالعيادة، من 9 تقييمات على فيسبوك</span><span class="en">recommend the clinic, from 9 Facebook reviews</span></div>
+ <div class="rev">
+  <blockquote><p lang="ar" dir="rtl">علاج التقويم و كمان التجميل ممتاز و برشح المكان بقوة. دكتور ميسرة شاطر جدا، و العيادة فيها كل التخصصات، تيم كامل كلهم ماشاءالله ممتازين. شكرا دكتورة دينا.</p><cite>Youssef Wagieh · Facebook</cite></blockquote>
+  <blockquote><p lang="ar" dir="rtl">عياده ممتازه عن تجربه ما شاء الله.</p><cite>Kareem Dwedar · Facebook</cite></blockquote>
+ </div>
+ <p class="note" style="margin-top:14px"><a href="https://www.facebook.com/DamaDentClinics/reviews" target="_blank" rel="noopener"><span class="ar">اقرأ كل التقييمات على فيسبوك</span><span class="en">Read all reviews on Facebook</span></a></p>
+</div></section>
+
+<section id="book" style="padding-top:0"><div class="wrap contact">
+ <form id="f" novalidate>
+  <h2 style="font-size:1.5rem"><span class="ar">احجز كشف</span><span class="en">Book a visit</span></h2>
+  <p class="note"><span class="ar">اكتب بياناتك ثم افتح واتساب لإرسال الطلب إلى العيادة.</span><span class="en">Fill in your details, then open WhatsApp to send the request to the clinic.</span></p>
+  <label for="n"><span class="ar">الاسم</span><span class="en">Name</span><input id="n" name="n" autocomplete="name" required><span class="err" id="en_"></span></label>
+  <label for="p"><span class="ar">رقم الموبايل</span><span class="en">Mobile number</span><input id="p" name="p" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required><span class="err" id="ep"></span></label>
+  <label for="s"><span class="ar">الخدمة المطلوبة</span><span class="en">Service</span><select id="s" name="s"></select></label>
+  <label for="m"><span class="ar">ملاحظات (اختياري)</span><span class="en">Notes (optional)</span><textarea id="m" name="m" rows="3"></textarea></label>
+  <button class="btn" type="submit"><span class="ar">افتح واتساب لإرسال الطلب</span><span class="en">Open WhatsApp to send</span></button>
+  <p class="ok" id="done" hidden><a id="wa" href="#" target="_blank" rel="noopener"><span class="ar">اضغط هنا لفتح واتساب وإرسال الطلب</span><span class="en">Tap here to open WhatsApp and send your request</span></a></p>
+ </form>
+ <div class="info">
+  <h2 style="font-size:1.5rem"><span class="ar">تفضل بزيارتنا</span><span class="en">Visit us</span></h2>
+  <dl>
+   <div><dt><span class="ar">العنوان</span><span class="en">Address</span></dt><dd><span class="ar">13BF ويست بارك مول، شارع الورود، محور جمال عبد الناصر، الحي الأول، 6 أكتوبر، الجيزة 12566</span><span class="en">13BF Westpark Mall, Al Worood Street, Gamal Abd El Nasser Axis, First 6th of October, Giza 12566</span></dd><dd style="margin-top:8px"><a class="btn sm ghost" style="color:var(--brand-text)" href="https://maps.app.goo.gl/EtGtkk1Uit3gnF676" target="_blank" rel="noopener"><span class="ar">افتح الموقع على الخريطة</span><span class="en">Open in Google Maps</span></a></dd></div>
+   <div><dt><span class="ar">موبايل وواتساب</span><span class="en">Phone &amp; WhatsApp</span></dt><dd><span class="num">010 98848412</span> · <span class="num">+20 10 98848412</span></dd></div>
+   <div><dt><span class="ar">البريد الإلكتروني</span><span class="en">Email</span></dt><dd><span class="num">dama.dent1@gmail.com</span></dd></div>
+   <div><dt><span class="ar">تابعنا</span><span class="en">Follow</span></dt><dd><div class="soc">
+    <a href="https://www.instagram.com/damadentclinics" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/DamaDentClinics" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://tiktok.com/@Damadentclinics" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.snapchat.com/add/damadentclinics" target="_blank" rel="noopener">Snapchat</a>
+    <a href="https://x.com/Damadentclinics" target="_blank" rel="noopener">X</a>
+    <a href="https://linktr.ee/damadentclinics" target="_blank" rel="noopener">Linktree</a>
+   </div></dd></div>
+  </dl>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <span>© Dama Dent Clinics · Dr. Dina Abdallah</span>
+ <span><span class="ar">عيادة أسنان في 6 أكتوبر، الجيزة</span><span class="en">Dental clinic, 6th of October City, Giza</span></span>
+</div></footer>
+
+<script>
+(function(){
+var root=document.documentElement,L={
+ ar:{svc:["كشف وتشخيص","حشو وعلاج عصب","تنظيف وإزالة جير","تبييض الأسنان","عدسات (ابتسامة هوليوود)","زراعة الأسنان","تقويم الأسنان / شفاف","طب أسنان الأطفال","خلع / جراحة","أخرى"],ne:"اكتب اسمك.",pe:"اكتب رقم موبايل صحيح.",msg:function(n,p,s,m){return "مرحبًا، أود حجز كشف في ديما دنت.\nالاسم: "+n+"\nالموبايل: "+p+"\nالخدمة: "+s+(m?"\nملاحظات: "+m:"")}},
+ en:{svc:["Check-up & diagnosis","Fillings & root canal","Cleaning & scaling","Teeth whitening","Veneers (Hollywood smile)","Dental implants","Braces / clear aligners","Children's dentistry","Extraction / surgery","Other"],ne:"Please enter your name.",pe:"Please enter a valid mobile number.",msg:function(n,p,s,m){return "Hello, I would like to book a visit at Dama Dent.\nName: "+n+"\nMobile: "+p+"\nService: "+s+(m?"\nNotes: "+m:"")}}};
+var lang="ar";
+function fill(){var s=document.getElementById("s"),i=s.selectedIndex;s.innerHTML="";L[lang].svc.forEach(function(t){var o=document.createElement("option");o.textContent=t;s.appendChild(o)});s.selectedIndex=Math.max(i,0)}
+function set(l){lang=l;root.setAttribute("data-l",l);root.lang=l;root.dir=l==="ar"?"rtl":"ltr";fill();["en_","ep"].forEach(function(id){document.getElementById(id).textContent=""})}
+set("ar");
+document.getElementById("lang").onclick=function(){set(lang==="ar"?"en":"ar")};
+var v=document.getElementById("heroVid");
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches){v.play&&v.play().catch(function(){})}
+document.getElementById("f").addEventListener("submit",function(e){
+ e.preventDefault();
+ var n=document.getElementById("n").value.trim(),p=document.getElementById("p").value.trim(),ok=true;
+ document.getElementById("en_").textContent=n?"":L[lang].ne; if(!n)ok=false;
+ var digits=p.replace(/\D/g,"");
+ document.getElementById("ep").textContent=digits.length>=10?"":L[lang].pe; if(digits.length<10)ok=false;
+ if(!ok)return;
+ var s=document.getElementById("s").value,m=document.getElementById("m").value.trim();
+ var url="https://wa.me/201098848412?text="+encodeURIComponent(L[lang].msg(n,p,s,m));
+ document.getElementById("wa").href=url;document.getElementById("done").hidden=false;
+});
+})();
+</script>
+
+</body></html>
